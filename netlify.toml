@@ -1,0 +1,17 @@
+[build]
+  functions = "netlify/functions"
+
+[functions]
+  external_node_modules = ["express", "mongoose"]
+
+[dev]
+  # This helps the Netlify CLI simulate the production environment locally
+  functions = "netlify/functions"
+  port = 8888 # Default port for 'netlify dev'
+  autoLaunch = false
+
+[[redirects]]
+  force = true
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat" # :splat is a wildcard that captures everything after '/api/'
+  status = 200

@@ -1,0 +1,21 @@
+{
+  "name": "sguilbeaux_com_functions",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/smokerbag/sguilbeaux_com_functions#readme",
+  "bugs": {
+    "url": "https://github.com/smokerbag/sguilbeaux_com_functions/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smokerbag/sguilbeaux_com_functions.git"
+  },
+  "license": "MIT",
+  "author": "Scott Guilbeaux",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.0.0",
+    "serverless-http": "^4.0.0"
+  }
+}
